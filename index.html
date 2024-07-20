@@ -1,0 +1,126 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Test Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+        }
+
+        .container {
+            margin-top: 80px;
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .test-details p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+            color: #333;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 2em 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.75s ease;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        button span {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://see.fontimg.com/api/renderfont4/9Y2DK/eyJyIjoiZnMiLCJoIjo5NCwidyI6MjAwMCwiZnMiOjQ3LCJmZ2MiOiIjRTkwQjNDIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/QnJhaW5zdG9ybSBDbGFzc2VzIA/nature-beauty-personal-use.png"width="90%">
+    <br>
+    <center><img src="https://see.fontimg.com/api/renderfont4/4VwY/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiIzIxMTJFQyIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/VGVzdCBQb3J0YWwg/youth-touch-demo-regular.png"width="60%"></center>
+    </header>
+    <div class="container">
+        <div class="test-details">
+            <p><strong><font color=brown>Subjects:</font></strong> Mathematics<br></br><b>Chapter:- Matrix & Determinant</b></p>
+            <p><strong>Number of Questions:</strong> 35</p>
+            <p><strong>Total Marks:</strong> 70</p>
+            <p><strong>Time Duration:</strong> 59 minutes</p>
+        </div>
+        <div class="button-container">
+            <button onclick="giveTest()"><span>Give Test</span></button>
+        <br></br>
+            <br></br>  
+       <center ><font color=red><strong> •Hosting BY</strong>&nbsp;</font><font color=blue><strong><u><a href="https://ssy.rf.gd/?i=1">Sattu technologies</a></u>💫</strong>
+  <br></br>
+ <font color=red><strong> • Design BY</strong>&nbsp;</font><font color=brown><strong><u>SATYAM ✨</u></strong>
+        
+        </center>
+        </div>
+    </div>
+    <script>
+        function giveTest() {
+            alert("Redirecting to the test page...");
+            // Add your redirect logic here, for example:
+            // window.location.href = "test_page.html";
+        }
+    </script>
+</body>
+</html>
